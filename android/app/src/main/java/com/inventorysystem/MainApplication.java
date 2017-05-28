@@ -3,7 +3,7 @@ package com.inventorysystem;
 import android.app.Application;
 
 import com.facebook.react.ReactApplication;
-import com.i18n.reactnativei18n.ReactNativeI18n;
+import io.realm.react.RealmReactPackage;
 import com.oblador.vectoricons.VectorIconsPackage;
 import com.learnium.RNDeviceInfo.RNDeviceInfo;
 import com.lugg.ReactNativeConfig.ReactNativeConfigPackage;
@@ -27,7 +27,7 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
           new MainReactPackage(),
-            new ReactNativeI18n(),
+            new RealmReactPackage(),
             new VectorIconsPackage(),
             new RNDeviceInfo(),
             new ReactNativeConfigPackage()

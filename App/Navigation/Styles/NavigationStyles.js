@@ -1,8 +1,13 @@
 import { StyleSheet } from 'react-native'
-import { Colors } from '../../Themes/'
+import { Colors, Metrics } from '../../Themes/'
 
 export default StyleSheet.create({
   header: {
-    backgroundColor: Colors.backgroundColor
-  }
+    backgroundColor: Colors.primary,
+  },
+  title: {
+    color: Colors.snow,
+    alignSelf: 'center',
+    marginLeft: -10,
+  },
 })
