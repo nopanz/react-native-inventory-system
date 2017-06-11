@@ -20,7 +20,6 @@ const ApplicationStyles = {
     },
     container: {
       flex: 1,
-      paddingTop: Metrics.baseMargin,
       backgroundColor: Colors.transparent,
     },
     section: {
@@ -44,6 +43,11 @@ const ApplicationStyles = {
       ...Fonts.style.h2,
       fontSize: 14,
       color: Colors.text,
+    },
+    inputSection: {
+      paddingHorizontal: 25,
+      marginTop: 10,
+      marginBottom: 10,
     },
   },
   darkLabelContainer: {

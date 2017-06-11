@@ -10,6 +10,8 @@ class Product extends Realm.Object {
         name: 'string',
         price: 'float',
         imageUrl: 'string',
+        description: 'string',
+        discounts: {type: 'list', objectType: 'Discount'},
       },
     }
   }

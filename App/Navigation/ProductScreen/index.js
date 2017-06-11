@@ -1,4 +1,4 @@
-import ProductScreen from './Components/ProductScreen'
+import ProductScreen from './Container/ProductScreen'
 
 export default {
   screen: ProductScreen,
