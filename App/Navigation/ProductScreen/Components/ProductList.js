@@ -36,7 +36,7 @@ class ProductList extends React.Component {
       image = {uri: imageUrl}
     }
     return (
-      <ListViewRow >
+      <ListViewRow onPress={() => this.props.showUpdateModal(product)} >
         <AvatarImageHolder size={99} source={image || Images.defaultLogo} />
         <View style={{padding: 10}}>
           <Text style={styles.label} >{name}</Text>
@@ -68,6 +68,7 @@ class ProductList extends React.Component {
   }
 
   render () {
+    console.log('update modal', this.props.showUpdateModal)
     return (
       <View style={styles.listContainer}>
         <ListView
